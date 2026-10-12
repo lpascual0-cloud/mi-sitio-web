@@ -2,13 +2,13 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Posiciones con CSS - Mi sitio web</title>
-        <!--Hacemos referencia a los estilos de mi pagina-->
+        <title>Práctica de posiciones - Mi sitio web</title>
+        <!-- Hacemos referencia a los estilos de la página -->
         <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
         <header><img src="pepe.jpg" alt="Encabezado"></header>
-        <nav>
+<nav>
             <ul>
                 <li><a href="index.html">Página principal</a></li>
                 <li><a href="#">Conóceme</a>
@@ -20,7 +20,7 @@
                 <li><a href="#">Segunda parcial</a>
                     <ul>
                         <li><a href="practica1.html">Práctica uno</a></li>
-                        <li><a href="posiciones.html">Posiciones</a></li>
+                        <li><a href="posiciones.html">Práctica de posiciones</a></li>
                         <li><a href="mundodigital.html">Mi mundo digital</a></li>
                     </ul>
                 </li>
@@ -33,37 +33,37 @@
         </nav>
         <section>
             <aside class="principal">
-                <h2>Posiciones con CSS</h2>
-                <h3>Tema: posiciones con CSS</h3>
-                <p>Esta práctica consiste en aplicar las propiedades de posicionamiento en HTML con CSS, estas nos permiten controlar la ubicación de los elementos dentro de una página web.</p>
-                <h3>¿Qué es el posicionamiento?</h3>
-                <p>Dependiendo de la posición, un elemento puede permanecer en su lugar, desplazarse, colocarse encima o estar fijo.</p>
-                <h3>Posiciones que estudiaremos</h3>
+                <h2> Práctica de posiciones con CSS</h2>
+                <p>Esta práctica consiste en aplicar las propiedades de posicionamiento en CSS para controlar la ubicación de los elementos en una página web según el tutorial de <em>freeCodeCamp</em>.</p>
+                
+                <h3>Valores de la propiedad <code>position</code>:</h3>
                 <ul>
-                    <li>static</li>
-                    <li>relative</li>
-                    <li>absolute</li>
-                    <li>fixed</li>
-                    <li>sticky</li>
+                    <li><strong>static:</strong> Es la posición por defecto. Los elementos siguen el flujo normal del documento.</li>
+                    <li><strong>relative:</strong> Desplaza el elemento respecto a su posición original usando <code>top</code>, <code>left</code>, etc., sin afectar a los otros elementos.</li>
+                    <li><strong>absolute:</strong> El elemento se remueve del flujo normal y se ubica de forma relativa a su contenedor padre posicionado más cercano.</li>
+                    <li><strong>fixed:</strong> Mantiene el elemento fijo en la pantalla con respecto a la ventana gráfica (viewport) incluso al hacer scroll.</li>
+                    <li><strong>sticky:</strong> Funciona como una combinación entre <code>relative</code> y <code>fixed</code>, fijándose al llegar a un punto especificado de la pantalla.</li>
                 </ul>
+
+                <h3>Ejemplos prácticos:</h3>
                 <div class="ejemplo">
                    <div class="programador static">
-                       Estilo Static: Los programadores trabajan constantemente con números, lógica y estructuras para construir soluciones.
+                       <strong>Estilo Static:</strong> Posicionamiento natural en el flujo HTML.
                    </div>
                 </div>
                 <div class="ejemplo">
                    <div class="programador relative">
-                       Estilo Relative: El día del programador se celebra tradicionalmente el día 256 del año.
+                       <strong>Estilo Relative:</strong> Muestra un desplazamiento relativo a su sitio inicial.
                    </div>
                 </div>
-                 <div class="ejemplo">
+                <div class="ejemplo">
                    <div class="programador absolute">
-                       Estilo absolute: El número 256 tiene un significado en informática.
+                       <strong>Estilo Absolute:</strong> Se ubica exactamente dentro del contenedor padre.
                    </div>
                 </div>
-                 <div class="ejemplo">
+                <div class="ejemplo">
                    <div class="programador sticky">
-                       Estilo sticky: 2⁸ = 256, está relacionado con los bits utilizados para representar 256 valores diferentes.
+                       <strong>Estilo Sticky:</strong> Permanece visible al hacer scroll sobre su contenedor.
                    </div>
                 </div>
             </aside>
