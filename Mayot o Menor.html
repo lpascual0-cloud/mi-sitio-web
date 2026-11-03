@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Verificador de edad - Mi sitio web</title>
+        <!-- Referencia a los estilos de la página -->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header><img src="pepe.jpg" alt="Encabezado"></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="#">Conóceme</a>
+                    <ul>
+                        <li><a href="informacio.html">Información personal</a></li>
+                        <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Segunda parcial</a>
+                    <ul>
+                        <li><a href="practica1.html">Práctica uno</a></li>
+                        <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                        <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                        <li><a href="comunidad.html">Comunidad</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tercera parcial</a>
+                    <ul>
+                        <li><a href="tercer_practica1.html">Práctica uno</a></li>
+                        <li><a href="edad.html">Verificador de edad</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <aside class="principal">
+                <h2>Verificador de edad</h2>
+                <p>Ingresa tu edad para verificar si eres mayor o menor de edad.</p>
+
+                <div style="margin: 20px 0;">
+                    <label for="edadInput">Ingresa tu edad: </label>
+                    <input type="number" id="edadInput" placeholder="Ejemplo: 20">
+                    <button onclick="verificarEdad()">Verificar</button>
+                </div>
+
+                <script>
+                    function verificarEdad() {
+                        let valorInput = document.getElementById("edadInput").value;
+
+                        if (valorInput === "") {
+                            alert("Por favor, ingresa un valor en el campo de edad.");
+                        } else {
+                            let edad = Number(valorInput);
+
+                            if (isNaN(edad) || edad < 0) {
+                                alert("Por favor, ingresa un número válido mayor o igual a cero.");
+                            } else if (edad >= 18) {
+                                alert("Eres mayor de edad");
+                            } else {
+                                alert("Eres menor de edad");
+                            }
+                        }
+                    }
+                </script>
+            </aside>
+
+            <aside class="secundario">
+                <h2>C M R 🕊️</h2>
+                <p>Práctica de JavaScript con estructuras condicionales y captura de datos.</p>
+            </aside>
+        </section>
+
+        <footer>
+            <img src="logo_ucol.png" alt="Logo Ucol">
+            <div>
+                <p><strong>Universidad de Colima</strong></p>
+                <p>Bachillerato 8</p>
+                <p>Programación de Internet I</p>
+            </div>
+        </footer>
+    </body>
+</html>
