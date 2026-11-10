@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversor de temperaturas - Mi sitio web</title>
+        <!-- Estilos compartidos de tu página -->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header><img src="pepe.jpg" alt="Encabezado"></header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="#">Conóceme</a>
+                    <ul>
+                        <li><a href="informacio.html">Información personal</a></li>
+                        <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Segunda parcial</a>
+                    <ul>
+                        <li><a href="practica1.html">Práctica uno</a></li>
+                        <li><a href="posiciones.html">Práctica de posiciones</a></li>
+                        <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                        <li><a href="comunidad.html">Comunidad</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tercera parcial</a>
+                    <ul>
+                        <li><a href="tercer_practica1.html">Práctica uno</a></li>
+                        <li><a href="edad.html">Verificador de edad</a></li>
+                        <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <aside class="principal">
+                <h2>Conversor de temperaturas</h2>
+                <p>Ingresa una temperatura, selecciona el tipo de conversión y presiona el botón para calcular.</p>
+
+                <div style="margin: 20px 0; display: flex; flex-direction: column; gap: 15px; max-width: 320px;">
+                    <div>
+                        <label for="tempInput"><strong>Temperatura:</strong></label><br>
+                        <input type="number" id="tempInput" placeholder="Ejemplo: 30" style="width: 100%; padding: 8px; box-sizing: border-box;" step="any">
+                    </div>
+
+                    <div>
+                        <label for="tipoConversion"><strong>Tipo de conversión:</strong></label><br>
+                        <select id="tipoConversion" style="width: 100%; padding: 8px; box-sizing: border-box;">
+                            <option value="cToF">Celsius a Fahrenheit</option>
+                            <option value="fToC">Fahrenheit a Celsius</option>
+                        </select>
+                    </div>
+
+                    <button id="btnConvertir" style="padding: 10px; background-color: peru; color: yellow; border: none; font-weight: bold; cursor: pointer;">Convertir</button>
+                </div>
+
+                <div id="resultado" style="margin-top: 20px; font-size: 1em; background-color: #fff; padding: 15px; border-radius: 5px; color: #000; border: 1px solid #ccc; display: none;">
+                    <!-- Resultado ingresado por JS -->
+                </div>
+            </aside>
+
+            <aside class="secundario">
+                <h2>C M R 🕊️</h2>
+                <p>Práctica de JavaScript de la Tercera Parcial.</p>
+            </aside>
+        </section>
+
+        <footer>
+            <img src="logo_ucol.png" alt="Logo Ucol">
+            <div>
+                <p><strong>Universidad de Colima</strong></p>
+                <p>Bachillerato 8</p>
+                <p>Programación de Internet I</p>
+            </div>
+        </footer>
+
+        <script src="temperaturas.js"></script>
+    </body>
+</html>
